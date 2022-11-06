@@ -4,9 +4,9 @@ Import unittest to get test results.
 import unittest
 from translator import english_to_french, french_to_english
 
-class TestTranslator(unittest.TestCase):
+class TestTranslatorE2F(unittest.TestCase):
     """
-    This identify TestCase from TestTranslator.
+    This identify TestCase from TestTranslatorE2F.
     """
     def test_english_to_french(self):
         """
@@ -17,6 +17,10 @@ class TestTranslator(unittest.TestCase):
         self.assertEqual(english_to_french('Hello'), 'Bonjour')
         #test when the string 'Hello' is given as input the output must be 'Bonjour'.
 
+class TestTranslatorF2E(unittest.TestCase):
+    """
+    This identify TestCase from TestTranslatorF2E.
+    """
     def test_french_to_english(self):
         """
         This function tests French to English.
