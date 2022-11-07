@@ -2,7 +2,8 @@
 Import unittest to get test results.
 """
 import unittest
-from translator import english_to_french, french_to_english
+from translator import english_to_french
+from translator import french_to_english
 
 class TestTranslatorE2F(unittest.TestCase):
     """
@@ -32,4 +33,3 @@ class TestTranslatorF2E(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-    
