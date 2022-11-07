@@ -13,7 +13,7 @@ def english_to_french():
     This function takes the English text as input through the
     request parameter and return a string.
     """
-    text_to_translate = request.args.get('text_to_translate')
+    text_to_translate = request.args.get('textToTranslate')
     # Write your code here
     english_text= translator.french_to_english(text_to_translate)
     return english_text
@@ -24,7 +24,7 @@ def french_to_english():
     This function takes the French text as input through the
     request parameter and return a string.
     """
-    text_to_translate = request.args.get('text_to_translate')
+    text_to_translate = request.args.get('textToTranslate')
     # Write your code here
     french_text= translator.french_to_english(text_to_translate)
     return french_text
@@ -39,3 +39,4 @@ def render_index_page():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
+
